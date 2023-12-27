@@ -24,6 +24,8 @@ form.addEventListener("submit", function (event) {
     alert("password is valid");
   } else {
     console.log(passwordInput.value);
+    event.preventDefault();
+
     alert(
       "password is not valid, please make sure it has atleast a uppercase letter, a number and a non-alphanumeric charcater"
     );
