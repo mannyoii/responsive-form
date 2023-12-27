@@ -3,7 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <h1>Please Login</h1>
+      <form action="">
+        <label for="username">Username</label>
+        <input
+          id="username"
+          type="email"
+          placeholder="Enter Email"
+          name="username"
+          required
+        />
+
+        <label for="password">Password</label>
+        <input
+          id="password"
+          type="password"
+          placeholder="Enter Password"
+          name="password"
+          maxlength="10"
+          minlength="8"
+          required
+        />
+
+        <button type="submit">Submit</button>
+
+        <p>Dont't have an account> <a href="#">Register</a></p>
+      </form>
+    </div>
+  </body>
 </html>
