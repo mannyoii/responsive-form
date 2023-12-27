@@ -1,5 +1,6 @@
 const form = document.querySelector("form");
 const passwordInput = document.getElementById("password");
+const passwordInputAgain = document.getElementById("re-password");
 
 form.addEventListener("submit", function (event) {
   // const regex =
@@ -13,6 +14,10 @@ form.addEventListener("submit", function (event) {
   const hasSpecialChar = specialCharRegex.test(passwordInput.value);
 
   // const regexPasswordCheck = passwordInput.value.match(regex);
+  if (passwordInput.value !== passwordInputAgain.value) {
+    alert("passwords do not match");
+    return;
+  }
 
   if (hasUppercase && hasNumber && hasSpecialChar) {
     event.preventDefault();
