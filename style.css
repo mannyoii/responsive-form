@@ -38,6 +38,10 @@ body {
   width: 300px;
 }
 
+.form-container label {
+  font-size: 18px;
+}
+
 .form-container input {
   display: block;
   background-color: transparent;
@@ -60,4 +64,8 @@ body {
   font-family: inherit;
   border: 0;
   border-radius: 5px;
+}
+
+.btn:active {
+  transform: scale(0.98);
 }
